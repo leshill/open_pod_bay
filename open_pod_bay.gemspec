@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = OpenPodBay::VERSION
   spec.authors       = ["Les Hill"]
   spec.email         = ["leshill@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Open a pod’s workspace}
+  spec.summary       = %q{Open a pod’s workspace}
+  spec.homepage      = "https://github.com/leshill/open_pod_bay"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
