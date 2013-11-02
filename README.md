@@ -1,24 +1,26 @@
-# OpenPodBay
+# “Open the pod bay doors HAL”
 
-TODO: Write a gem description
+CocoaPods plug-in to open a workspace. If no workspace is found, the command
+continues up the directory tree looking for one to open.
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-    gem 'open_pod_bay'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install the gem:
 
     $ gem install open_pod_bay
 
 ## Usage
 
-TODO: Write usage instructions here
+    pod open
+
+## Author
+
+Hi, I am Les Hill and I make things.
+
+If you are happy with this gem, follow me on Github
+[@leshill](https://github.com/leshill) and Twitter
+[@leshill](https://twitter.com/leshill).
 
 ## Contributing
 
