@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'open_pod_bay/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "open_pod_bay"
+  spec.name          = "cocoapods-open"
   spec.version       = OpenPodBay::VERSION
   spec.authors       = ["Les Hill"]
   spec.email         = ["leshill@gmail.com"]
-  spec.description   = %q{Open a pod’s workspace}
+  spec.description   = %q{CocoaPod’s plugin to open a pod’s workspace}
   spec.summary       = %q{Open a pod’s workspace}
   spec.homepage      = "https://github.com/leshill/open_pod_bay"
   spec.license       = "MIT"

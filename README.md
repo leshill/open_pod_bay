@@ -8,7 +8,7 @@ continues up the directory tree looking for one to open.
 
 Install the gem:
 
-    $ gem install open_pod_bay
+    $ gem install cocoapods-open
 
 ## Usage
 
