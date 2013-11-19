@@ -19,7 +19,7 @@ module Pod
       end
 
       def run
-        `open #{@workspace}`
+        `open "#{@workspace}"`
       end
 
       private
