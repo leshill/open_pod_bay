@@ -22,6 +22,10 @@ If you are happy with this gem, follow me on Github
 [@leshill](https://github.com/leshill) and Twitter
 [@leshill](https://twitter.com/leshill).
 
+## Contributors
+
+* Sam Soffes (@soffes) : Quote workspace file name (fixes #1!)
+
 ## Contributing
 
 1. Fork it
