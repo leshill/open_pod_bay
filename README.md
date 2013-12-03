@@ -3,6 +3,9 @@
 CocoaPods plug-in to open a workspace. If no workspace is found, the command
 continues up the directory tree looking for one to open.
 
+Also adds the ability to install pods and then open the workspace. Useful when
+modifying your `Podfile`.
+
 ## Installation
 
 
@@ -12,7 +15,13 @@ Install the gem:
 
 ## Usage
 
+Open the workspace
+
     pod open
+
+Install pods and then open the workspace (`pod install && pod open`)
+
+    pod reinstall
 
 ## Author
 
@@ -24,7 +33,8 @@ If you are happy with this gem, follow me on Github
 
 ## Contributors
 
-* Sam Soffes (@soffes) : Quote workspace file name (fixes #1!)
+* Sam Soffes   (@soffes)      : Quote workspace file name (fixes #1!)
+* Mark Rickert (@markrickert) : `reinstall` command
 
 ## Contributing
 
