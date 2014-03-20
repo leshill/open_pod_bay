@@ -15,9 +15,13 @@ Install the gem:
 
 ## Usage
 
-Open the workspace
+Open the workspace in Xcode
 
     pod open
+
+Open the workspace in AppCode
+
+    pod open -a
 
 Install pods and then open the workspace (`pod install && pod open`)
 
