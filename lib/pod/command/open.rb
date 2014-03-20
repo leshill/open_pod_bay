@@ -5,10 +5,12 @@ module Pod
       self.summary = 'Open the workspace'
       self.description = <<-DESC
         Opens the workspace in xcode. If no workspace found in the current directory,
-        looks up until it finds one.
+        looks up until it finds one. Pass `-a` flag if you want to open in AppCode.
       DESC
+      self.arguments = '[-a]'
 
       def initialize(argv)
+        @use_appcode = (argv.shift_argument == '-a')
         @workspace = find_workspace_in(Pathname.pwd)
         super
       end
@@ -16,10 +18,17 @@ module Pod
       def validate!
         super
         raise Informative, "No xcode workspace found" unless @workspace
+        if @use_appcode
+          raise Informative, "Can't find `#{appcode_executable}` command line launcher. Have you created it? 'AppCode->Tools->Create Command line launcher'" unless is_appcode_available
+        end
       end
 
       def run
-        `open "#{@workspace}"`
+        if @use_appcode
+          `#{appcode_executable} "#{@workspace}"`
+        else
+          `open "#{@workspace}"`
+        end
       end
 
       private
@@ -30,6 +39,15 @@ module Pod
 
       def find_workspace_in_parent(path)
         find_workspace_in(path.parent) unless path.root?
+      end
+
+      def is_appcode_available
+        `which #{appcode_executable}`
+        $?.exitstatus == 0
+      end
+
+      def appcode_executable
+        'appcode'
       end
     end
   end
