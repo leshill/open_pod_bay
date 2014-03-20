@@ -19,7 +19,7 @@ module Pod
         super
         raise Informative, "No xcode workspace found" unless @workspace
         if @use_appcode
-          raise Informative, "Can't find `#{appcode_executable}` command line launcher. Have you created it? 'AppCode->Tools->Create Command line launcher'" unless is_appcode_available
+          raise Informative, "Can't find `#{appcode_executable}` command line launcher. Have you created it? 'AppCode->Tools->Create Command line launcher'" unless appcode_available?
         end
       end
 
@@ -41,7 +41,7 @@ module Pod
         find_workspace_in(path.parent) unless path.root?
       end
 
-      def is_appcode_available
+      def appcode_available?
         `which #{appcode_executable}`
         $?.exitstatus == 0
       end
