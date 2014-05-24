@@ -7,7 +7,7 @@ module Pod
         Opens the workspace in xcode. If no workspace found in the current directory,
         looks up until it finds one. Pass `-a` flag if you want to open in AppCode.
       DESC
-      self.arguments = '[-a]'
+      self.arguments = [['-a', :optional]]
 
       def initialize(argv)
         @use_appcode = (argv.shift_argument == '-a')
