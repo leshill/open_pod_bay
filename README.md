@@ -40,6 +40,7 @@ If you are happy with this gem, follow me on Github
 * Sam Soffes        (@soffes)      : Quote workspace file name (fixes #1!)
 * Mark Rickert      (@markrickert) : `reinstall` command
 * Victor Ilyukevich (@yas375)      : `open -a` option
+* Robert Wijas      (@robertwijas) : Fixed arguments warning
 
 ## Contributing
 
