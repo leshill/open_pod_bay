@@ -41,6 +41,7 @@ If you are happy with this gem, follow me on Github
 * Mark Rickert      (@markrickert) : `reinstall` command
 * Victor Ilyukevich (@yas375)      : `open -a` option
 * Robert Wijas      (@robertwijas) : Fixed arguments warning
+* Boris Bügling     (@neonichu)    : Use option syntax for '-a'
 
 ## Contributing
 
